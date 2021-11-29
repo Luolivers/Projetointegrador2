@@ -1,5 +1,5 @@
 from flask import Flask
-import SQLAlchemy
+from flask_sqlachemy import SQLAlchemy
 import fcntl
 
 # init SQLAlchemy so we can use it later in our models
