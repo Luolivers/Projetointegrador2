@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+import SQLAlchemy
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
@@ -8,7 +8,7 @@ def create_app():
     app = Flask(__name__)
 
     app.config['SECRET_KEY'] = 'secret-key-goes-here'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'projeto-integrador-univesp.database.windows.net'
 
     db.init_app(app)
 
